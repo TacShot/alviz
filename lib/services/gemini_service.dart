@@ -6,14 +6,15 @@ import '../models/analysis_result.dart';
 
 class GeminiService {
   // TODO: Update this URL after deploying Firebase Cloud Function
-  // Format: https://us-central1-PROJECT_ID.cloudfunctions.net/analyzeDataStructure
+  // Format: https://asia-south1-PROJECT_ID.cloudfunctions.net/analyzeDataStructure
   static const String API_URL = 'REPLACE_WITH_FIREBASE_FUNCTION_URL';
 
-  Future<AnalysisResult> analyzeImage(String base64Image) async {
+  Future<AnalysisResult> analyzeImage(String base64Image, {String analysisType = 'educational'}) async {
     try {
       // Create JSON payload
       final payload = {
         'image': base64Image,
+        'analysisType': analysisType,
       };
 
       // Make POST request to Cloud Function
