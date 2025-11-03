@@ -85,7 +85,7 @@ class _AnalyzerScreenState extends State<AnalyzerScreen> {
       final base64Image = base64Encode(_selectedImageBytes!);
 
       // Call API
-      final result = await _geminiService.analyzeImage(base64Image);
+      final result = await _geminiService.analyzeImage(base64Image, analysisType: _selectedAnalysisType);
 
       if (mounted) {
         setState(() {
