@@ -18,6 +18,7 @@ class _AnalyzerScreenState extends State<AnalyzerScreen> {
   String _analysisText = 'Analysis results will appear here...';
   bool _isLoading = false;
   bool _hasError = false;
+  String _selectedAnalysisType = 'educational';
   final GeminiService _geminiService = GeminiService();
 
   Future<void> _pickImage() async {
