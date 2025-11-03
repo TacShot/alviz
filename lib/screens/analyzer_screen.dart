@@ -180,6 +180,158 @@ class _AnalyzerScreenState extends State<AnalyzerScreen> {
                                 ),
                         ),
                         const SizedBox(height: 15),
+                        // Analysis type selection
+                        Container(
+                          padding: const EdgeInsets.all(16.0),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey.shade300, width: 1),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'Analysis Type',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _selectedAnalysisType = 'educational';
+                                        });
+                                      },
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                                        decoration: BoxDecoration(
+                                          color: _selectedAnalysisType == 'educational'
+                                              ? Theme.of(context).colorScheme.primary
+                                              : Colors.grey.shade100,
+                                          border: Border.all(
+                                            color: _selectedAnalysisType == 'educational'
+                                                ? Theme.of(context).colorScheme.primary
+                                                : Colors.grey.shade300,
+                                            width: 2,
+                                          ),
+                                          borderRadius: BorderRadius.circular(6),
+                                        ),
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.school,
+                                              color: _selectedAnalysisType == 'educational'
+                                                  ? Colors.white
+                                                  : Colors.grey.shade600,
+                                              size: 20,
+                                            ),
+                                            const SizedBox(width: 8),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    'Educational',
+                                                    style: TextStyle(
+                                                      color: _selectedAnalysisType == 'educational'
+                                                          ? Colors.white
+                                                          : Colors.black87,
+                                                      fontWeight: FontWeight.w600,
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    'Student-friendly explanations',
+                                                    style: TextStyle(
+                                                      color: _selectedAnalysisType == 'educational'
+                                                          ? Colors.white70
+                                                          : Colors.grey.shade600,
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _selectedAnalysisType = 'technical';
+                                        });
+                                      },
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                                        decoration: BoxDecoration(
+                                          color: _selectedAnalysisType == 'technical'
+                                              ? Theme.of(context).colorScheme.primary
+                                              : Colors.grey.shade100,
+                                          border: Border.all(
+                                            color: _selectedAnalysisType == 'technical'
+                                                ? Theme.of(context).colorScheme.primary
+                                                : Colors.grey.shade300,
+                                            width: 2,
+                                          ),
+                                          borderRadius: BorderRadius.circular(6),
+                                        ),
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.code,
+                                              color: _selectedAnalysisType == 'technical'
+                                                  ? Colors.white
+                                                  : Colors.grey.shade600,
+                                              size: 20,
+                                            ),
+                                            const SizedBox(width: 8),
+                                            Expanded(
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    'Technical',
+                                                    style: TextStyle(
+                                                      color: _selectedAnalysisType == 'technical'
+                                                          ? Colors.white
+                                                          : Colors.black87,
+                                                      fontWeight: FontWeight.w600,
+                                                      fontSize: 14,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    'Detailed implementation details',
+                                                    style: TextStyle(
+                                                      color: _selectedAnalysisType == 'technical'
+                                                          ? Colors.white70
+                                                          : Colors.grey.shade600,
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 15),
                         // Button row
                         Row(
                           children: [
