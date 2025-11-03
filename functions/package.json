@@ -1,0 +1,25 @@
+{
+  "name": "alviz-functions",
+  "description": "Firebase Cloud Functions for Alviz Data Structure Analyzer",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "firebase-functions": "^4.5.0",
+    "@google-cloud/vertexai": "^0.5.0",
+    "firebase-admin": "^11.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
