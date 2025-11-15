@@ -30,9 +30,9 @@ An AI-powered Windows desktop application that analyzes data structure diagrams 
 - **Runtime:** Node.js 20
 - **Model:** Google Gemini 2.5 Pro (advanced reasoning multimodal model)
 - **Key Dependencies:**
-  - `@google/generative-ai` - Gemini API SDK
-  - `cors` - Cross-origin resource sharing
-  - `firebase-functions` - Cloud Functions runtime
+  - `@google/generative-ai` - Latest Gemini API SDK (supports 2.5 Pro)
+  - `cors` - Latest version for cross-origin requests
+  - `firebase-functions` - Latest Cloud Functions runtime (v2)
 
 ### Why This Architecture?
 
