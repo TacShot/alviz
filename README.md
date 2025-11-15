@@ -27,7 +27,7 @@ An AI-powered Windows desktop application that analyzes data structure diagrams 
 ### Backend: Firebase Cloud Functions
 - **Platform:** Firebase Cloud Functions (2nd gen)
 - **Runtime:** Node.js 20
-- **Model:** Google Gemini 2.0 Flash (multimodal vision model)
+- **Model:** Google Gemini 2.5 Pro (advanced reasoning multimodal model)
 - **Key Dependencies:**
   - `@google/generative-ai` - Gemini API SDK
   - `cors` - Cross-origin resource sharing
