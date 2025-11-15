@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../models/analysis_result.dart';
 
 class GeminiService {
-  // TODO: Update this URL after deploying Firebase Cloud Function
+  // TODO: Update this URL after deploying Firebase Cloud Function with Gemini 2.5 Pro
   // Format: https://us-central1-PROJECT_ID.cloudfunctions.net/analyzeDataStructure
   static const String API_URL = 'REPLACE_WITH_FIREBASE_FUNCTION_URL';
 
