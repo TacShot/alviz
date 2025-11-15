@@ -9,6 +9,13 @@ class GeminiService {
   // Format: https://us-central1-PROJECT_ID.cloudfunctions.net/analyzeDataStructure
   static const String API_URL = 'REPLACE_WITH_FIREBASE_FUNCTION_URL';
 
+  // Gemini 2.5 Pro Integration Notes:
+  // - Model ID: gemini-2.5-pro
+  // - Supports up to 1M token context window (2M coming soon)
+  // - Includes "thinking" capabilities for enhanced reasoning
+  // - Higher output costs include thinking tokens
+  // - Better performance on complex data structure analysis
+
   Future<AnalysisResult> analyzeImage(String base64Image) async {
     try {
       // Create JSON payload
