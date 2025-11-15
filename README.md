@@ -358,7 +358,7 @@ Potential features for future versions:
 - **Flutter** - Cross-platform UI framework
 - **Dart** - Programming language for Flutter
 - **Firebase Cloud Functions** - Serverless backend
-- **Google Gemini API** - AI vision model for analysis
+- **Google Gemini 2.5 Pro API** - Advanced reasoning and thinking capabilities for enhanced analysis
 - **Material Design 3** - UI design system
 
 ## License
