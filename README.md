@@ -324,19 +324,22 @@ http://127.0.0.1:5001/YOUR_PROJECT_ID/us-central1/analyzeDataStructure
 
 ### Free Tier Limits (as of 2025):
 
-**Gemini API:**
-- 1,500 requests per day (free)
-- After: ~$0.00025 per request
+**Gemini 2.5 Pro API:**
+- Input: $1.25 per million tokens (≤200K context)
+- Output: $10 per million tokens (includes "thinking" tokens)
+- Input: $2.50 per million tokens (>200K context)
+- Output: $15 per million tokens (>200K context)
+- 1,500 free requests per day via Google AI Studio
+- Context caching: $0.31-$0.625 per million tokens + storage fees
 
 **Firebase Cloud Functions:**
-- 2 million invocations per month
+- 2 million invocations per month (free tier)
 - 400,000 GB-seconds compute time
 - 200,000 CPU-seconds
 - 5GB outbound networking per month
 
-**For personal/educational use:** You'll likely stay within free tier.
-
-**For production use with many users:** Monitor usage in Firebase Console.
+**For personal/educational use:** Likely stay within free tier with moderate usage
+**For production use:** Monitor usage carefully - 2.5 Pro costs significantly more than 2.0 Flash
 
 ## Future Enhancements
 
