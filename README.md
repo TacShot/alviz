@@ -286,6 +286,15 @@ For a binary tree diagram, you might get:
 - Try: `flutter clean` then `flutter pub get`
 - Run: `flutter doctor -v` to check for missing dependencies
 
+### Issue: Model upgrade issues
+
+**Solutions:**
+- Ensure Firebase Cloud Functions are updated to use Gemini 2.5 Pro
+- Check Firebase function logs for model availability errors
+- Verify API key has access to Gemini 2.5 Pro model
+- Monitor costs - 2.5 Pro has significantly higher token costs than previous models
+- Consider context window utilization (up to 1M tokens) for complex diagrams
+
 ## Development
 
 ### Running in Debug Mode
