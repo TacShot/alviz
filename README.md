@@ -11,6 +11,7 @@ An AI-powered Windows desktop application that analyzes data structure diagrams 
   - Key components (nodes, pointers, edges)
   - How it works (insertion, deletion, search operations)
   - Common use cases
+- **Enhanced Reasoning:** Advanced analysis through complex data structure examination leveraging Gemini 2.5 Pro's thinking capabilities
 - **Clean UI:** Intuitive Material Design interface optimized for Windows desktop
 - **Secure API Design:** API key stored server-side in Firebase, never exposed to client
 
