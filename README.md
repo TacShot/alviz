@@ -5,7 +5,7 @@ An AI-powered Windows desktop application that analyzes data structure diagrams 
 ## Features
 
 - **Image Upload:** Select data structure diagram images from your computer
-- **AI Analysis:** Powered by Gemini 2.0 Flash for accurate identification and explanation
+- **AI Analysis:** Powered by Gemini 2.5 Pro for advanced reasoning and accurate identification
 - **Detailed Descriptions:** Get bullet-point breakdowns of:
   - Data structure identification
   - Key components (nodes, pointers, edges)
