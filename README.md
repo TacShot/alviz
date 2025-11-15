@@ -132,6 +132,34 @@ flutter create --platforms=windows .
 
 This generates the necessary Windows platform configuration.
 
+### Windows Development Setup (2025)
+
+Before building, ensure your development environment is ready:
+
+```bash
+# Verify Flutter installation and requirements
+flutter doctor
+
+# Ensure Windows desktop support is enabled
+flutter config --enable-windows-desktop
+
+# Check for any missing Visual Studio components
+flutter doctor -v
+```
+
+**Modern Build Option (MSIX Packaging):**
+For professional distribution, consider MSIX packaging:
+
+```bash
+# Install msix package
+flutter pub add msix
+
+# Build MSIX package
+flutter pub run msix:create
+```
+
+This creates a modern Windows package with proper certification and auto-update capabilities.
+
 ### 6. Run the App
 
 ```bash
