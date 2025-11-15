@@ -69,8 +69,8 @@ functions/
 ## Prerequisites
 
 ### For Flutter App Development:
-- Flutter SDK 3.0.0 or higher
-- Windows development tools (Visual Studio 2022 with Desktop C++ workload)
+- Flutter SDK 3.35.0 or higher (current stable as of 2025)
+- Visual Studio 2022 with Desktop C++ workload and Windows 10/11 SDK
 - Git
 
 ### For Firebase Backend:
